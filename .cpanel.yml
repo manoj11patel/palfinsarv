@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/$USER/public_html
+    - export DEPLOYPATH=/home/$USER/public_html/palfinsarv
     - /bin/cp -R $TRAVIS_BUILD_DIR/* $DEPLOYPATH
     - cd $DEPLOYPATH && composer install --no-dev --optimize-autoloader
     - cd $DEPLOYPATH && php artisan migrate --force
