@@ -8,6 +8,8 @@ use App\Models\Customer;
 use App\Traits\AuditLoggingTrait;
 use Illuminate\Http\Request;
 
+
+
 class ApplicationController extends Controller
 {
     use AuditLoggingTrait;
